@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #eef2f3; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .auth-container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { margin-bottom: 1.5rem; color: #333; text-align: center; }
+        .form-group { margin-bottom: 1rem; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+        input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        input:focus { border-color: #007bff; outline: none; box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); }
+        .submit-btn { width: 100%; padding: 10px; background: #007bff; border: none; color: white; font-size: 1rem; border-radius: 4px; cursor: pointer; margin-top: 10px; }
+        .submit-btn:hover { background: #0056b3; }
+        .toggle-text { text-align: center; margin-top: 15px; font-size: 0.9rem; }
+        .toggle-text a { color: #007bff; text-decoration: none; }
+        .toggle-text a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Create Account</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters">
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <div class="toggle-text">
+            Already have an account? <a href="#">Login here</a>
+        </div>
+    </div>
+</body>
+</html>
